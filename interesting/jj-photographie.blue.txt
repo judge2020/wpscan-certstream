@@ -1,0 +1,101 @@
+_______________________________________________________________
+        __          _______   _____                  
+        \ \        / /  __ \ / ____|                 
+         \ \  /\  / /| |__) | (___   ___  __ _ _ __ ®
+          \ \/  \/ / |  ___/ \___ \ / __|/ _` | '_ \ 
+           \  /\  /  | |     ____) | (__| (_| | | | |
+            \/  \/   |_|    |_____/ \___|\__,_|_| |_|
+
+        WordPress Security Scanner by the WPScan Team 
+                       Version 2.9.3
+          Sponsored by Sucuri - https://sucuri.net
+   @_WPScan_, @ethicalhack3r, @erwan_lr, pvdl, @_FireFart_
+_______________________________________________________________
+
+[i] Updating the Database ...
+[i] Update completed.
+[i] The remote host tried to redirect to: https://www.jj-photographie.blue/
+[?] Do you want follow the redirection ? [Y]es [N]o [A]bort, default: [N]Y
+[+] URL: https://www.jj-photographie.blue/
+[+] Started: Fri Dec 22 23:42:34 2017
+
+[+] robots.txt available under: 'https://www.jj-photographie.blue/robots.txt'
+[+] Interesting entry from robots.txt: https://www.jj-photographie.blue/wp-admin/admin-ajax.php
+[+] Interesting header: LINK: <https://www.jj-photographie.blue/wp-json/>; rel="https://api.w.org/"
+[+] Interesting header: LINK: <https://www.jj-photographie.blue/>; rel=shortlink
+[+] Interesting header: SERVER: nginx
+[+] Interesting header: STRICT-TRANSPORT-SECURITY: max-age=31536000
+[+] This site has 'Must Use Plugins' (http://codex.wordpress.org/Must_Use_Plugins)
+[+] XML-RPC Interface available under: https://www.jj-photographie.blue/xmlrpc.php
+
+[+] WordPress version 4.8.4 (Released on 2017-11-29) identified from links opml
+
+[+] WordPress theme in use: vega - v3.8
+
+[+] Name: vega - v3.8
+ |  Latest version: 2.3.4 (up to date)
+ |  Last updated: 2017-11-26T00:00:00.000Z
+ |  Location: https://www.jj-photographie.blue/wp-content/themes/vega/
+ |  Style URL: https://www.jj-photographie.blue/wp-content/themes/vega/style.css
+ |  Theme Name: Vega
+ |  Theme URI: http://themes.themegoods2.com/vega
+ |  Description: Premium Template for Portfolio Photography
+ |  Author: ThemeGoods
+ |  Author URI: http://themeforest.net/user/ThemeGoods
+
+[+] Enumerating plugins from passive detection ...
+ | 5 plugins found:
+
+[+] Name: instagram-feed - v1.5.0
+ |  Last updated: 2017-11-28T04:34:00.000Z
+ |  Location: https://www.jj-photographie.blue/wp-content/plugins/instagram-feed/
+ |  Readme: https://www.jj-photographie.blue/wp-content/plugins/instagram-feed/README.txt
+[!] The version is out of date, the latest version is 1.5.1
+
+[+] Name: meow-lightbox
+ |  Latest version: 1.0.6 
+ |  Last updated: 2017-11-15T05:44:00.000Z
+ |  Location: https://www.jj-photographie.blue/wp-content/plugins/meow-lightbox/
+
+[+] Name: revslider
+ |  Location: https://www.jj-photographie.blue/wp-content/plugins/revslider/
+
+[!] We could not determine a version so all vulnerabilities are printed out
+
+[!] Title: WordPress Slider Revolution Local File Disclosure
+    Reference: https://wpvulndb.com/vulnerabilities/7540
+    Reference: http://blog.sucuri.net/2014/09/slider-revolution-plugin-critical-vulnerability-being-exploited.html
+    Reference: http://packetstormsecurity.com/files/129761/
+    Reference: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-1579
+    Reference: https://www.exploit-db.com/exploits/34511/
+    Reference: https://www.exploit-db.com/exploits/36039/
+[i] Fixed in: 4.1.5
+
+[!] Title: WordPress Slider Revolution Shell Upload
+    Reference: https://wpvulndb.com/vulnerabilities/7954
+    Reference: https://whatisgon.wordpress.com/2014/11/30/another-revslider-vulnerability/
+    Reference: https://www.rapid7.com/db/modules/exploit/unix/webapp/wp_revslider_upload_execute
+    Reference: https://www.exploit-db.com/exploits/35385/
+[i] Fixed in: 3.0.96
+
+[+] Name: surbma-yes-no-popup
+ |  Latest version: 1.6.0 
+ |  Last updated: 2017-08-24T14:04:00.000Z
+ |  Location: https://www.jj-photographie.blue/wp-content/plugins/surbma-yes-no-popup/
+
+[+] Name: wordpress-seo - v5.7.1
+ |  Last updated: 2017-12-05T11:24:00.000Z
+ |  Location: https://www.jj-photographie.blue/wp-content/plugins/wordpress-seo/
+[!] The version is out of date, the latest version is 5.9.1
+
+[!] Title: Yoast SEO <= 5.7.1 - Unauthenticated Cross-Site Scripting (XSS)
+    Reference: https://wpvulndb.com/vulnerabilities/8960
+    Reference: https://plugins.trac.wordpress.org/changeset/1766831/wordpress-seo/trunk/admin/google_search_console/class-gsc-table.php
+    Reference: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-16842
+[i] Fixed in: 5.8
+
+[+] Finished: Fri Dec 22 23:45:26 2017
+[+] Requests Done: 407
+[+] Memory used: 146.816 MB
+[+] Elapsed time: 00:02:52
+
