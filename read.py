@@ -14,6 +14,10 @@ def check(blabla):
                 return True
         return False #because you finished the search without finding anything
 
+def is_wpscan3():
+	process = subprocess.Popen(['wpscan', '-v'], stdout=subprocess.PIPE)
+	out, err = process.communicate()
+	return 'v3' in out
 
 def random_agent():
 	with open('user-agents.txt','r') as f:
@@ -27,7 +31,7 @@ def random_agent():
 def is_wordpress(url):
 	url = 'http://' + url
 	try:
-		d = requests.get(url, headers={"User-Agent":random_agent()})
+		d = requests.get(url, headers={"User-Agent":random_agent()}, timeout=10)
 		return 'wp-' in d.text
 	except Exception as e:
 		print(str(e))
@@ -54,7 +58,7 @@ def do_main():
 		if is_wordpress(line):
 			print('Website most likely is wordpress: %s' % line)
 			write_is_interesting(line)
-			os.system('wpscan --random-agent --update --follow-redirection -u ' + line)
+			os.system('wpscan --random-agent --follow-redirection --update --url ' + line)
 			return 0
 		else:
 			print('Website most likely is not wordpress.')
