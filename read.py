@@ -48,13 +48,12 @@ def do_main():
 	alreadyscanned = 0
 	for line in file:
 		line = line.replace('\n', '')
+		fwrite.write(line + '\n')
 		if check(line):
 			alreadyscanned += 1
 			continue
 		print('Scanning %s' % line)
 		print('Already scanned %s hosts' % alreadyscanned)
-		# Write to the already-scanned list
-		fwrite.write(line + '\n')
 		if is_wordpress(line):
 			print('Website most likely is wordpress: %s' % line)
 			write_is_interesting(line)
